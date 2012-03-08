@@ -1,0 +1,57 @@
+<div class="section">
+    <p class="sectiontitle">Case Commands</p>
+    <dl class="vimcommandhelp">
+        <dt>Vu</dt>
+        <dd>
+            Lowercase Line
+        </dd>
+        <dt>VU</dt>
+        <dd>
+            Uppercase Line
+        </dd>
+        <dt>g~~</dt>
+        <dd>
+            Invert Case of Line
+        </dd>
+        <dt>vEU</dt>
+        <dd>
+            Uppercase Word
+        </dd>
+        <dt>vE~</dt>
+        <dd>
+            Invert Case of Word
+        </dd>
+        <dt>ggguG</dt>
+        <dd>
+            Lowercase Entire Buffer
+        </dd>
+        <dt>gggUG</dt>
+        <dd>
+            Uppercase Entire Buffer
+        </dd>
+        <dt>:set ignorecase</dt>
+        <dd>
+            Ignore case in all searches
+        </dd>
+        <dt>:set smartcase</dt>
+        <dd>
+            Ignore case in all searches unless an uppercase letter is used
+        </dd>
+        <dt>:%s/\<./\u&amp;/g</dt>
+        <dd>
+            Uppercase the first letter of each word
+        </dd>
+        <dt>:%s/\<./\l&amp;/g</dt>
+        <dd>
+            Lowercase the first letter of each word
+        </dd>
+        <dt>:%s/\<.*/\u&amp;/g</dt>
+        <dd>
+            Uppercase the first letter of each Line
+        </dd>
+        <dt>:%s/\<.*/\l&amp;/g</dt>
+        <dd>
+            Lowercase the first letter of each Line
+        </dd>
+    </dl>
+</div>

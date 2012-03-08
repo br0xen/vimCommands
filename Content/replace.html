@@ -1,0 +1,42 @@
+<div class="section">
+    <p class="sectiontitle">Replace Commands</p>
+    <p>vim does searches by regular expressions</p>
+    <dl class="vimcommandhelp">
+        <dt>:%s/<span class="argtermt" title="Search term">old</span>/<span class="argtermt" title="Replace term">new</span>/g</dt>
+        <dd>
+            Replace all occurences of <span class="argtermt" title="Search term">old</span> with <span class="argtermt" title="Replace term">new</span>
+        </dd>
+        <dt>:<span class="argtermt" title="Start of Range">3</span>,<span class="argtermt" title="End of Range">6</span>s/<span class="argtermt" title="Search term">old</span>/<span class="argtermt" title="Replace term">new</span>/g</dt>
+        <dd>
+            Replace all occurences of <span class="argtermt" title="Search term">old</span> with <span class="argtermt" title="Replace term">new</span> between the lines of <span class="argtermt" title="Start of Range">3</span> and <span class="argtermt" title="End of Range">6</span>
+        </dd>
+        <dt>:<span class="argtermt" title="Start of Range">3</span>,<span class="argtermt" title="End of Range">$</span>s/<span class="argtermt" title="Search term">old</span>/<span class="argtermt" title="Replace term">new</span>/g</dt>
+        <dd>
+            Replace all occurences of <span class="argtermt" title="Search term">old</span> with <span class="argtermt" title="Replace term">new</span> between the lines of <span class="argtermt" title="Start of Range">3</span> and <span class="argtermt" title="End of Range">the end of the file</span>
+        </dd>
+        <dt>:g/<span class="argtermt" title="Search term">word</span>/d</dt>
+        <dd>
+            Delete all lines containing <span class="argtermt" title="Search term">word</span>
+        </dd>
+        <dt>:v/<span class="argtermt" title="Search term">word</span>/d</dt>
+        <dd>
+            Delete all lines NOT containing <span class="argtermt" title="Search term">word</span>
+        </dd>
+        <dt>:%s#<[^>]\+>##g</dt>
+        <dd>
+            Remove HTML tags but keep text in between them
+        </dd>
+        <dt>Ctrl+a</dt>
+        <dd>
+            Increment the number under the cursor
+        </dd>
+        <dt>Ctrl+x</dt>
+        <dd>
+            Decrement the number under the cursor
+        </dd>
+        <dt>ggVGg?</dt>
+        <dd>
+            Rot13 the entire buffer
+        </dd>
+    </dl>
+</div>
